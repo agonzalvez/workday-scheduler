@@ -12,6 +12,6 @@
  8. 
 
 
- ## Usage:
+ ## Deployment:
  - Link to application: https://agonzalvez.github.io/workday-scheduler/
  - App screenshot(s):
