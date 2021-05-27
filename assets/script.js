@@ -1,5 +1,6 @@
 var timeDisplay = $('#currentDay');
 var saveButton = document.querySelector('.saveBtn');
+var activityValue = document.querySelector('.activity');
 
 
 
@@ -12,10 +13,10 @@ saveButton.addEventListener("click", storeActivity);
 
 
 function storeActivity (){
-    var activityValue = document.querySelector('.activity').value;
+
     var description = $(this).siblings(".activity").val()
     console.log(description)
-    var time = $(this).parent().attr("id")
+    var time = $(this).parent().attr("class")
     console.log(time)
     localStorage.setItem(time, description);
     
