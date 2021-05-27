@@ -1,6 +1,6 @@
-# Workday Schedule
+# Workday Scheduler
 ## Description:
-
+- Created a simple workday scheduler, which tells the user the current day and date, divides the day by the hour, identifies past, current and future hours by color-coding the background of the specific container, and lastly, it allows the user to save any events/acitivities into their browser's local storage.
 ## Process:
  1. Created a HTML, CSS and JS files
  2. Linked all files accordingly
@@ -13,5 +13,5 @@
 
 
  ## Usage:
- - Link to application:
+ - Link to application: https://agonzalvez.github.io/workday-scheduler/
  - App screenshot(s):
