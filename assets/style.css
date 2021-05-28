@@ -72,7 +72,7 @@ textarea {
 
 .saveBtn:hover {
   font-size: 20px;
-  background-color: lightgreen;
+  background-color: rgb(169, 40, 194);
   transition: all 0.3s ease-in-out;
 }
 

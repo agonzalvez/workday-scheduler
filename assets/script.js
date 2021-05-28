@@ -1,15 +1,16 @@
 var timeDisplay = $('#currentDay');
-var saveButton = document.querySelector('.saveBtn');
+var saveButton = document.querySelectorAll('.saveBtn');
 var activityValue = document.querySelector('.activity');
-
+console.log(saveButton)
 
 
 // Current day and date using moment.js
 var today = moment().format('dddd, MMMM Do YYYY');
 timeDisplay.text(today);
 
-
-saveButton.addEventListener("click", storeActivity);
+for (i = 0; i < saveButton.length; i++){
+   saveButton[i].addEventListener("click", storeActivity);
+}
 
 
 function storeActivity (){
@@ -17,20 +18,21 @@ function storeActivity (){
     var description = $(this).siblings(".activity").val()
     console.log(description)
     var time = $(this).parent().attr("class")
-    console.log(time)
-    localStorage.setItem(time, description);
+    console.log(typeof time)
+    localStorage.setItem(time.split(' ')[1], description);
     
 }
 
-$("#09 .activity").val(localStorage.getItem("09"))
-$("#10 .activity").val(localStorage.getItem("10"))
-$("#11 .activity").val(localStorage.getItem("11"))
-$("#12 .activity").val(localStorage.getItem("12"))
-$("#13 .activity").val(localStorage.getItem("13"))
-$("#14 .activity").val(localStorage.getItem("14"))
-$("#15 .activity").val(localStorage.getItem("15"))
-$("#16 .activity").val(localStorage.getItem("16"))
-$("#17 .activity").val(localStorage.getItem("17"))
+$("#09 + .activity").val(localStorage.getItem("9am"))
+$("#10 + .activity").val(localStorage.getItem("10am"))
+$("#11 + .activity").val(localStorage.getItem("11am"))
+$("#12.activity").val(localStorage.getItem("12pm"))
+$("#13.activity").val(localStorage.getItem("13pm"))
+$("#14.activity").val(localStorage.getItem("14pm"))
+$("#15.activity").val(localStorage.getItem("15pm"))
+$("#16.activity").val(localStorage.getItem("16pm"))
+$("#17.activity").val(localStorage.getItem("17pm"))
+
 
 
 function hourBlock(){
