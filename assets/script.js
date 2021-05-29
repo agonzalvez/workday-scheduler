@@ -26,12 +26,12 @@ function storeActivity (){
 $("#09 + .activity").val(localStorage.getItem("9am"))
 $("#10 + .activity").val(localStorage.getItem("10am"))
 $("#11 + .activity").val(localStorage.getItem("11am"))
-$("#12.activity").val(localStorage.getItem("12pm"))
-$("#13.activity").val(localStorage.getItem("13pm"))
-$("#14.activity").val(localStorage.getItem("14pm"))
-$("#15.activity").val(localStorage.getItem("15pm"))
-$("#16.activity").val(localStorage.getItem("16pm"))
-$("#17.activity").val(localStorage.getItem("17pm"))
+$("#12 + .activity").val(localStorage.getItem("12pm"))
+$("#13 + .activity").val(localStorage.getItem("13pm"))
+$("#14 + .activity").val(localStorage.getItem("14pm"))
+$("#15 + .activity").val(localStorage.getItem("15pm"))
+$("#16 + .activity").val(localStorage.getItem("16pm"))
+$("#17 + .activity").val(localStorage.getItem("17pm"))
 
 
 
